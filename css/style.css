@@ -70,3 +70,7 @@ footer a{
 a {
     color: #ffffff;
 }
+#form a{
+    color: #000000;
+    font-size: 0.8em;
+}
