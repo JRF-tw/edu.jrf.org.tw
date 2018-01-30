@@ -1,4 +1,4 @@
-$('div').magnificPopup({ 
+$('div.image-link').magnificPopup({ 
   type: 'image',
   delegate: 'a',
   
