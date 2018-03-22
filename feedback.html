@@ -30,6 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body style="background-color: #F2B45A;">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <div id="top"></div>
     <!--選單 -->
     <div class="navbar-wrapper">
@@ -79,7 +80,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
                 <h1 class="text-center">問卷回饋</h1>
                 <p class="lead text-center">為了能更好的推廣法治教育，我們需要各位同學的回饋！</p>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
                 <form class="form-horizontal">
   <div class="form-group">
     <label for="dataInput" class="col-sm-2 control-label">活動日期</label>
@@ -235,12 +235,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default" onclick="SendScore()">送出</button>
+      <input type="button" class="btn btn-default" onclick="SendStudent()" value="送出" />
     </div>
   </div>
 </form>
     <script type="text/javascript">
-        function SendScore(){
+        function SendStudent(){
             $.get("https://script.google.com/macros/s/AKfycbzablmOe-MdTkOy3adzE8IdfSYBteAtj313g1upzPnjLlScbj1T/exec", {
                         "data": document.getElementById("dataInput").value,
                         "school": document.getElementById("schoolInput").value,
