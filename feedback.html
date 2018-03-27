@@ -20,18 +20,29 @@
     <meta property="og:url" content="https://edu.jrf.org.tw/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="img/fb.png" />
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PKP2C9R');</script>
-<!-- End Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PKP2C9R');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body style="background-color: #F2B45A;">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <div id="top"></div>
     <!--選單 -->
     <div class="navbar-wrapper">
@@ -79,195 +90,191 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row">
             <div class="col-xs-12" style="color: #fcf8e3">
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
-                <h1 class="text-center">問卷回饋</h1>
-                <p class="lead text-center">為了能更好的推廣法治教育，我們需要各位同學的回饋！</p>
-                <form class="form-horizontal">
-  <div class="form-group">
-    <label for="dateInput" class="col-sm-2 control-label">活動日期</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="dateInput" placeholder="例如: 3/14">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="schoolInput" class="col-sm-2 control-label">學校名稱</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="schoolInput" placeholder="ＯＯ中學">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="classInput" class="col-sm-2 control-label">班級</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="classInput" placeholder="Ｏ年Ｏ班">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="genderInput" class="col-sm-2 control-label">性別</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="genderInput" placeholder="男／女／其他">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="scriptInput" class="col-sm-2 control-label">使用劇本</label>
-    <div class="col-sm-10">
-      <select class="form-control" id="jrfscriptInput">
-  <option>寶石竊盜案</option>
-  <option>鬥毆案</option>
-  <option>KTV販毒疑雲案</option>
-  <option>撿屍疑雲案</option>
-</select>
-    </div>
-  </div>
-  <fieldset>
-    <legend class="scheduler-border">活動安排</legend>
-  <div class="form-group">
-    <label for="timeInput" class="col-sm-2 control-label">時間安排</label>
-    <div class="col-sm-10">
-      <select multiple class="form-control" id="timeInput">
-        <option>0 不滿意</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5 普通</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-  <option>10 滿意</option>
-</select>
-    </div>
-  </div>
-<div class="form-group">
-    <label for="surroundingInput" class="col-sm-2 control-label">場地環境</label>
-    <div class="col-sm-10">
-      <select multiple class="form-control" id="surroundingInput">
-        <option>0 不喜歡</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5 普通</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-  <option>10 喜歡</option>
-</select>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="activityInput" class="col-sm-2 control-label">活動內容</label>
-    <div class="col-sm-10">
-      <select multiple class="form-control" id="activityInput">
-        <option>0 無聊</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5 普通</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-  <option>10 有趣</option>
-</select>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="partInput" class="col-sm-2 control-label">本次活動讓您印象最深刻的部分</label>
-    <div class="col-sm-10">
-        <select class="form-control" id="partInput">
-  <option>審判長進行審前指示</option>
-  <option>模擬法庭劇</option>
-  <option>陪審員評議過程</option>
-  <option>陪審團主席宣判結果與分享</option>
-  <option>講師解說</option>
-</select>
-    </div>
-  </div>
-</fieldset>
-  
-<fieldset class="scheduler-border">
-    <legend class="scheduler-border">劇本及審理程序</legend>
-  <div class="form-group">
-    <label for="s_difficultyInput" class="col-sm-2 control-label">劇本難易度</label>
-    <div class="col-sm-10">
-      <select class="form-control" id="s_difficultyInput">
-  <option>簡單</option>
-  <option>適中</option>
-  <option>困難</option>
-</select>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="instructionInput" class="col-sm-2 control-label">審判長的審前指示是否清楚？</label>
-    <div class="col-sm-10">
-      <select class="form-control" id="instructionInput">
-  <option>清楚</option>
-  <option>不清楚</option>
-</select>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="suggestionInput" class="col-sm-2 control-label">其他建議</label>
-    <div class="col-sm-10">
-      <textarea class="form-control" rows="3" id="suggestionInput" placeholder=""></textarea>
-    </div>
-  </div>
-</fieldset>
-<div class="form-group">
-    <label for="gainInput" class="col-sm-2 control-label">參與活動最大的收穫</label>
-    <div class="col-sm-10">
-      <textarea class="form-control" rows="3" id="gainInput" placeholder=""></textarea>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="experienceInput" class="col-sm-2 control-label">建議或回饋</label>
-    <div class="col-sm-10">
-      <textarea class="form-control" rows="3" id="experienceInput" placeholder=""></textarea>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="to_jrfInput" class="col-sm-2 control-label">想對講師/司改會說的話</label>
-    <div class="col-sm-10">
-      <textarea class="form-control" rows="3" id="to_jrfInput" placeholder=""></textarea>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <input type="button" class="btn btn-default" onclick="SendStudent()" value="送出" />
-    </div>
-  </div>
-</form>
+                    <h1 class="text-center">問卷回饋</h1>
+                    <p class="lead text-center">為了能更好的推廣法治教育，我們需要各位同學的回饋！</p>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="dateInput" class="col-sm-2 control-label">活動日期</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="dateInput" placeholder="例如: 3/14">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="schoolInput" class="col-sm-2 control-label">學校名稱</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="schoolInput" placeholder="ＯＯ中學">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="jrfclassInput" class="col-sm-2 control-label">班級</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="jrfclassInput" placeholder="Ｏ年Ｏ班">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="genderInput" class="col-sm-2 control-label">性別</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="genderInput" placeholder="男／女／其他">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="jrfscriptInput" class="col-sm-2 control-label">使用劇本</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="jrfscriptInput">
+                                    <option>寶石竊盜案</option>
+                                    <option>鬥毆案</option>
+                                    <option>KTV販毒疑雲案</option>
+                                    <option>撿屍疑雲案</option>
+                                </select>
+                            </div>
+                        </div>
+                        <fieldset>
+                            <legend class="scheduler-border">活動安排</legend>
+                            <div class="form-group">
+                                <label for="timeInput" class="col-sm-2 control-label">時間安排</label>
+                                <div class="col-sm-10">
+                                    <select multiple class="form-control" id="timeInput">
+                                        <option>1 不滿意</option>
+                                        <option>2</option>
+                                        <option>3 普通</option>
+                                        <option>4</option>
+                                        <option>5 滿意</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="surroundingInput" class="col-sm-2 control-label">場地環境</label>
+                                <div class="col-sm-10">
+                                    <select multiple class="form-control" id="surroundingInput">
+                                        <option>1 不滿意</option>
+                                        <option>2</option>
+                                        <option>3 普通</option>
+                                        <option>4</option>
+                                        <option>5 滿意</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="activityInput" class="col-sm-2 control-label">活動內容</label>
+                                <div class="col-sm-10">
+                                    <select multiple class="form-control" id="activityInput">
+                                        <option>1 無聊</option>
+                                        <option>2</option>
+                                        <option>3 普通</option>
+                                        <option>4</option>
+                                        <option>5 有趣</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="partInput" class="col-sm-2 control-label">本次活動讓您印象最深刻的部分</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="partInput">
+                                        <option>審判長進行審前指示</option>
+                                        <option>模擬法庭劇</option>
+                                        <option>陪審員評議過程</option>
+                                        <option>陪審團主席宣判結果與分享</option>
+                                        <option>講師解說</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">劇本及審理程序</legend>
+                            <div class="form-group">
+                                <label for="s_difficultyInput" class="col-sm-2 control-label">劇本難易度</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="s_difficultyInput">
+                                        <option>簡單</option>
+                                        <option>適中</option>
+                                        <option>困難</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="instructionInput" class="col-sm-2 control-label">審判長的審前指示是否清楚？</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="instructionInput">
+                                        <option>清楚</option>
+                                        <option>不清楚</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="suggestionInput" class="col-sm-2 control-label">其他建議</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3" id="suggestionInput" placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <label for="gainInput" class="col-sm-2 control-label">參與活動最大的收穫</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="gainInput" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="experienceInput" class="col-sm-2 control-label">建議或回饋</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="experienceInput" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="to_jrfInput" class="col-sm-2 control-label">想對講師/司改會說的話</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="to_jrfInput" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input type="button" class="btn btn-default" onclick="SendStudent()" value="送出" />
+                            </div>
+                        </div>
+                    </form>
+                    <script type="text/javascript">
+                      var 
+                        date = $('#dateInput'),
+                        school = $('#schoolInput'),
+                        jrfclass = $('#jrfclassInput'),
+                        gender = $('#genderInput'),
+                        jrfscript = $('#jrfscriptInput'),
+                        time = $('#timeInput'),
+                        surrounding = $('#surroundingInput'),
+                        activity = $('#activityInput'),
+                        part = $('#partInput'),
+                        s_difficulty = $('#s_difficultyInput'),
+                        instruction = $('#instructionInput'),
+                        suggestion = $('#suggestionInput'),
+                        gain = $('#gainInput'),
+                        experience = $('#experienceInput'),
+                        tojrf = $('#tojrfInput');
+                      function SendStudent() {
+                        $.get("https://script.google.com/macros/s/AKfycbzablmOe-MdTkOy3adzE8IdfSYBteAtj313g1upzPnjLlScbj1T/exec", {
+                                "date":date.val(),
+                                "school": school.val(),
+                                "jrfclass":jrfclass.val(),
+                                "gender":gender.val(),
+                                "jrfscript":jrfscript.val(),
+                                "time":time.val(),
+                                "surrounding":surrounding.val(),
+                                "activity":activity.val(),
+                                "part":part.val(),
+                                "s_difficulty":s_difficulty.val(),
+                                "instruction":instruction.val(),
+                                "suggestion":suggestion.val(),
+                                "gain":gain.val(),
+                                "experience":experience.val(),
+                                "tojrf":tojrf.val()
+                            },
+                            function(data) {
+                                window.location = 'https://edu.jrf.org.tw/done.html';
+                            });
+                    }
+                    </script>
+                </div>
             </div>
         </div>
-        </div>
     </div>
-<script type="text/javascript">
-        function SendStudent(){
-            $.get("https://script.google.com/macros/s/AKfycbzablmOe-MdTkOy3adzE8IdfSYBteAtj313g1upzPnjLlScbj1T/exec", {
-                        "date": document.getElementById("dateInput").value,
-                        "school": document.getElementById("schoolInput").value,
-                        "class": document.getElementById("classInput").value,
-                        "gender": document.getElementById("genderInput").value,
-                        "jrfscript": document.getElementById("jrfscriptInput").value,
-                        "time": document.getElementById("timeInput").value,
-                        "surrounding": document.getElementById("surroundingInput").value,
-                        "activity": document.getElementById("activityInput").value,
-                        "part": document.getElementById("partInput").value,
-                        "s_difficulty": document.getElementById("s_difficultyInput").value,
-                        "instruction": document.getElementById("instructionInput").value,
-                        "suggestion": document.getElementById("suggestionInput").value,
-                        "gain": document.getElementById("gainInput").value,
-                        "experience": document.getElementById("experienceInput").value,
-                        "tojrf": document.getElementById("tojrfInput").value,
-                    },
-                    function (data) {
-                        window.location = 'https://edu.jrf.org.tw/done.html';
-                    });
-        }
-    </script>
     <footer class="footer">
         <div class="container">
             <div class="row col-xs-12">
@@ -302,7 +309,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="scrollToTop" style="display: block;"><i class="fas fa-chevron-up"></i></div>
     </a>
     <!-- Optional JavaScript -->
-    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -310,9 +316,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Optional JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKP2C9R"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKP2C9R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
