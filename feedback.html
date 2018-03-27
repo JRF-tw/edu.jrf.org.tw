@@ -232,7 +232,7 @@
                         </div>
                     </form>
                     <script type="text/javascript">
-                      var 
+                    var
                         date = $('#dateInput'),
                         school = $('#schoolInput'),
                         jrfclass = $('#jrfclassInput'),
@@ -248,23 +248,24 @@
                         gain = $('#gainInput'),
                         experience = $('#experienceInput'),
                         tojrf = $('#tojrfInput');
-                      function SendStudent() {
+
+                    function SendStudent() {
                         $.get("https://script.google.com/macros/s/AKfycbzablmOe-MdTkOy3adzE8IdfSYBteAtj313g1upzPnjLlScbj1T/exec", {
-                                "date":date.val(),
+                                "date": date.val(),
                                 "school": school.val(),
-                                "jrfclass":jrfclass.val(),
-                                "gender":gender.val(),
-                                "jrfscript":jrfscript.val(),
-                                "time":time.val(),
-                                "surrounding":surrounding.val(),
-                                "activity":activity.val(),
-                                "part":part.val(),
-                                "s_difficulty":s_difficulty.val(),
-                                "instruction":instruction.val(),
-                                "suggestion":suggestion.val(),
-                                "gain":gain.val(),
-                                "experience":experience.val(),
-                                "tojrf":tojrf.val()
+                                "jrfclass": jrfclass.val(),
+                                "gender": gender.val(),
+                                "jrfscript": jrfscript.val(),
+                                "time": time.val(),
+                                "surrounding": surrounding.val(),
+                                "activity": activity.val(),
+                                "part": part.val(),
+                                "s_difficulty": s_difficulty.val(),
+                                "instruction": instruction.val(),
+                                "suggestion": suggestion.val(),
+                                "gain": gain.val(),
+                                "experience": experience.val(),
+                                "tojrf": tojrf.val()
                             },
                             function(data) {
                                 window.location = 'https://edu.jrf.org.tw/done.html';
