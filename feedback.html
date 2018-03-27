@@ -41,7 +41,7 @@
 </head>
 
 <body style="background-color: #F2B45A;">
-  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <div id="top"></div>
     <!--選單 -->
     <div class="navbar-wrapper">
@@ -134,7 +134,7 @@
                                 <label for="jrfscheduleInput" class="col-sm-2 control-label">時間安排</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="jrfscheduleInput">
-                                      <option>- 請擇一 -</option>
+                                        <option>- 請擇一 -</option>
                                         <option value="1">1 不滿意</option>
                                         <option value="2">2</option>
                                         <option value="3">3 普通</option>
@@ -147,7 +147,7 @@
                                 <label for="surroundingInput" class="col-sm-2 control-label">場地環境</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="surroundingInput">
-                                      <option>- 請擇一 -</option>
+                                        <option>- 請擇一 -</option>
                                         <option value="1">1 不滿意</option>
                                         <option value="2">2</option>
                                         <option value="3">3 普通</option>
@@ -160,7 +160,7 @@
                                 <label for="activityInput" class="col-sm-2 control-label">活動內容</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="activityInput">
-                                      <option>- 請擇一 -</option>
+                                        <option>- 請擇一 -</option>
                                         <option value="1">1 無聊</option>
                                         <option value="2">2</option>
                                         <option value="3">3 普通</option>
@@ -173,7 +173,7 @@
                                 <label for="partInput" class="col-sm-2 control-label">本次活動讓您印象最深刻的部分</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="partInput">
-                                      <option>- 請擇一 -</option>
+                                        <option>- 請擇一 -</option>
                                         <option>審判長進行審前指示</option>
                                         <option>模擬法庭劇</option>
                                         <option>陪審員評議過程</option>
@@ -189,7 +189,7 @@
                                 <label for="s_difficultyInput" class="col-sm-2 control-label">劇本難易度</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="s_difficultyInput">
-                                      <option>- 請擇一 -</option>
+                                        <option>- 請擇一 -</option>
                                         <option>簡單</option>
                                         <option>適中</option>
                                         <option>困難</option>
@@ -200,7 +200,7 @@
                                 <label for="instructionInput" class="col-sm-2 control-label">審判長的審前指示是否清楚？</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="instructionInput">
-                                      <option>- 請擇一 -</option>
+                                        <option>- 請擇一 -</option>
                                         <option>清楚</option>
                                         <option>不清楚</option>
                                     </select>
@@ -238,13 +238,12 @@
                         </div>
                     </form>
                     <script type="text/javascript">
-                    var
-                        date = $('#dateInput'),
+                    var date = $('#dateInput'),
                         school = $('#schoolInput'),
                         jrfclass = $('#jrfclassInput'),
                         gender = $('#genderInput'),
                         jrfscript = $('#jrfscriptInput'),
-                        jrftime = $('#jrftimeInput'),
+                        jrfschedule = $('#jrfscheduleInput'),
                         surrounding = $('#surroundingInput'),
                         activity = $('#activityInput'),
                         part = $('#partInput'),
@@ -262,7 +261,7 @@
                                 "jrfclass": jrfclass.val(),
                                 "gender": gender.val(),
                                 "jrfscript": jrfscript.val(),
-                                "jrftime": jrftime.val(),
+                                "jrfschedule": jrfschedule.val(),
                                 "surrounding": surrounding.val(),
                                 "activity": activity.val(),
                                 "part": part.val(),
