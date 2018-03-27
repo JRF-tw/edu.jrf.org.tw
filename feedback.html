@@ -31,6 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body style="background-color: #F2B45A;">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
     <div id="top"></div>
     <!--選單 -->
     <div class="navbar-wrapper">
@@ -82,9 +83,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p class="lead text-center">為了能更好的推廣法治教育，我們需要各位同學的回饋！</p>
                 <form class="form-horizontal">
   <div class="form-group">
-    <label for="dataInput" class="col-sm-2 control-label">活動日期</label>
+    <label for="dateInput" class="col-sm-2 control-label">活動日期</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="dataInput" placeholder="例如: 3/14">
+      <input type="text" class="form-control" id="dateInput" placeholder="例如: 3/14">
     </div>
   </div>
   <div class="form-group">
@@ -108,7 +109,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="form-group">
     <label for="scriptInput" class="col-sm-2 control-label">使用劇本</label>
     <div class="col-sm-10">
-      <select class="form-control" id="scriptInput">
+      <select class="form-control" id="jrfscriptInput">
   <option>寶石竊盜案</option>
   <option>鬥毆案</option>
   <option>KTV販毒疑雲案</option>
@@ -239,14 +240,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
 </form>
-    <script type="text/javascript">
+            </div>
+        </div>
+        </div>
+    </div>
+<script type="text/javascript">
         function SendStudent(){
             $.get("https://script.google.com/macros/s/AKfycbzablmOe-MdTkOy3adzE8IdfSYBteAtj313g1upzPnjLlScbj1T/exec", {
-                        "data": document.getElementById("dataInput").value,
+                        "date": document.getElementById("dateInput").value,
                         "school": document.getElementById("schoolInput").value,
                         "class": document.getElementById("classInput").value,
                         "gender": document.getElementById("genderInput").value,
-                        "script": document.getElementById("scriptInput").value,
+                        "jrfscript": document.getElementById("jrfscriptInput").value,
                         "time": document.getElementById("timeInput").value,
                         "surrounding": document.getElementById("surroundingInput").value,
                         "activity": document.getElementById("activityInput").value,
@@ -256,18 +261,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         "suggestion": document.getElementById("suggestionInput").value,
                         "gain": document.getElementById("gainInput").value,
                         "experience": document.getElementById("experienceInput").value,
-                        "to_jrf": document.getElementById("to_jrfInput").value,
+                        "tojrf": document.getElementById("tojrfInput").value,
                     },
                     function (data) {
                         window.location = 'https://edu.jrf.org.tw/done.html';
                     });
         }
     </script>
-            </div>
-        </div>
-        </div>
-    </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row col-xs-12">
