@@ -90,39 +90,40 @@
                     <p class="lead text-center">為了能更好的推廣法治教育，我們需要各位同學的回饋！</p>
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="dateInput" class="col-sm-2 control-label">活動日期</label>
+                            <label for="dateInput" class="col-sm-2 control-label">活動日期*</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="dateInput" placeholder="例如: 3/14">
+                                <input type="text" class="form-control jrfRequired" id="dateInput" placeholder="例如: 3/14"><span class='error1'></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="schoolInput" class="col-sm-2 control-label">學校名稱</label>
+                            <label for="schoolInput" class="col-sm-2 control-label">學校名稱*</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="schoolInput" placeholder="ＯＯ中學">
+                                <input type="text" class="form-control jrfRequired" id="schoolInput" placeholder="ＯＯ中學"><span class='error1'></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="jrfclassInput" class="col-sm-2 control-label">班級</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="jrfclassInput" placeholder="Ｏ年Ｏ班">
+                                <input type="text" class="form-control jrfRequired" id="jrfclassInput" placeholder="Ｏ年Ｏ班"><span class='error1'></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="genderInput" class="col-sm-2 control-label">性別</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="genderInput" placeholder="男／女／其他">
+                                <input type="text" class="form-control jrfRequired" id="genderInput" placeholder="男／女／其他"><span class='error1'></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="jrfscriptInput" class="col-sm-2 control-label">使用劇本</label>
                             <div class="col-sm-10">
-                                <select class="form-control" id="jrfscriptInput">
-                                    <option>- 請擇一 -</option>
+                                <select class="form-control jrfRequired" id="jrfscriptInput">
+                                    <option value="">- 請擇一 -</option>
                                     <option value="寶石竊盜案">寶石竊盜案</option>
                                     <option value="鬥毆案">鬥毆案</option>
                                     <option value="KTV販毒疑雲案">KTV販毒疑雲案</option>
                                     <option value="撿屍疑雲案">撿屍疑雲案</option>
                                 </select>
+                                <span class='error1'></span>
                             </div>
                         </div>
                         <fieldset>
@@ -130,53 +131,57 @@
                             <div class="form-group">
                                 <label for="jrfscheduleInput" class="col-sm-2 control-label">時間安排</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="jrfscheduleInput">
-                                        <option>- 請擇一 -</option>
+                                    <select class="form-control jrfRequired" id="jrfscheduleInput">
+                                        <option value="">- 請擇一 -</option>
                                         <option value="1">1 不滿意</option>
                                         <option value="2">2</option>
                                         <option value="3">3 普通</option>
                                         <option value="4">4</option>
                                         <option value="5">5 滿意</option>
                                     </select>
+                                    <span class='error1'></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="surroundingInput" class="col-sm-2 control-label">場地環境</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="surroundingInput">
-                                        <option>- 請擇一 -</option>
+                                    <select class="form-control jrfRequired" id="surroundingInput">
+                                        <option value="">- 請擇一 -</option>
                                         <option value="1">1 不滿意</option>
                                         <option value="2">2</option>
                                         <option value="3">3 普通</option>
                                         <option value="4">4</option>
                                         <option value="5">5 滿意</option>
                                     </select>
+                                    <span class='error1'></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="activityInput" class="col-sm-2 control-label">活動內容</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="activityInput">
-                                        <option>- 請擇一 -</option>
+                                    <select class="form-control jrfRequired" id="activityInput">
+                                        <option value="">- 請擇一 -</option>
                                         <option value="1">1 無聊</option>
                                         <option value="2">2</option>
                                         <option value="3">3 普通</option>
                                         <option value="4">4</option>
                                         <option value="5">5 有趣</option>
                                     </select>
+                                    <span class='error1'></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="partInput" class="col-sm-2 control-label">本次活動讓您印象最深刻的部分</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="partInput">
-                                        <option>- 請擇一 -</option>
-                                        <option>審判長進行審前指示</option>
-                                        <option>模擬法庭劇</option>
-                                        <option>陪審員評議過程</option>
-                                        <option>陪審團主席宣判結果與分享</option>
-                                        <option>講師解說</option>
+                                    <select class="form-control jrfRequired" id="partInput">
+                                        <option value="">- 請擇一 -</option>
+                                        <option value="審判長進行審前指示">審判長進行審前指示</option>
+                                        <option value="模擬法庭劇">模擬法庭劇</option>
+                                        <option value="陪審員評議過程">陪審員評議過程</option>
+                                        <option value="陪審團主席宣判結果與分享">陪審團主席宣判結果與分享</option>
+                                        <option value="講師解說">講師解說</option>
                                     </select>
+                                    <span class='error1'></span>
                                 </div>
                             </div>
                         </fieldset>
@@ -185,22 +190,24 @@
                             <div class="form-group">
                                 <label for="s_difficultyInput" class="col-sm-2 control-label">劇本難易度</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="s_difficultyInput">
-                                        <option>- 請擇一 -</option>
-                                        <option>簡單</option>
-                                        <option>適中</option>
-                                        <option>困難</option>
+                                    <select class="form-control jrfRequired" id="s_difficultyInput">
+                                        <option value="">- 請擇一 -</option>
+                                        <option value="簡單">簡單</option>
+                                        <option value="適中">適中</option>
+                                        <option value="困難">困難</option>
                                     </select>
+                                    <span class='error1'></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="instructionInput" class="col-sm-2 control-label">審判長的審前指示是否清楚？</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="instructionInput">
-                                        <option>- 請擇一 -</option>
-                                        <option>清楚</option>
-                                        <option>不清楚</option>
+                                    <select class="form-control jrfRequired" id="instructionInput">
+                                        <option value="">- 請擇一 -</option>
+                                        <option value="清楚">清楚</option>
+                                        <option value="不清楚">不清楚</option>
                                     </select>
+                                    <span class='error1'></span>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -211,9 +218,10 @@
                             </div>
                         </fieldset>
                         <div class="form-group">
-                            <label for="gainInput" class="col-sm-2 control-label">參與活動最大的收穫</label>
+                            <label for="gainInput" class="col-sm-2 control-label">簡述參與活動最大的收穫</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="gainInput" placeholder=""></textarea>
+                                <textarea class="form-control jrfRequired" rows="3" id="gainInput" placeholder=""></textarea>
+                                <span class='error1'></span>
                             </div>
                         </div>
                         <div class="form-group">
@@ -230,10 +238,26 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <input type="button" class="btn btn-default" onclick="SendStudent()" value="送出" />
+                                <input id="jrfBtn" type="button" class="btn btn-default disabled" onclick="SendStudent()" value="送出" />
                             </div>
                         </div>
                     </form>
+
+                    <script>
+                      $(document).ready(function() {
+                        var rule1 = /^.{3,5}$/;
+                        $('.jrfRequired').blur(function() {
+                          /* 驗證必填 */
+                          if (rule1.test($(this).val())) {
+                            $('.error1').text('');
+                            $('#jrfBtn').removeClass("disabled")
+                          }else{
+                            $('.error1').text('此欄位必填');
+                          }
+                        });
+                        
+                      });
+                    </script>
                     <script type="text/javascript">
                     var date = $('#dateInput'),
                         school = $('#schoolInput'),
