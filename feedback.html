@@ -244,8 +244,15 @@
                     </form>
                     <script>
                       $(document).ready(function() {
-                        $('#dateInput').focus(function() {
-                            if ($('#dateInput').val()=='') {
+                        $('.jrfRequired').ready(function() {
+                            if ($('#dateInput').val()=='',$('#schoolInput').val()=='',$('#jrfclassInput').val()=='',$('#genderInput').val()=='',$('#jrfscriptInput').val()=='',$('#jrfscheduleInput').val()=='',$('#surroundingInput').val()=='',$('#activityInput').val()=='',$('#partInput').val()=='',$('#s_difficultyInput').val()=='',$('#instructionInput').val()=='',$('#gainInput').val()=='') {
+                              $('#jrfBtn').addClass('disabled')
+                            }else{
+                              $('#jrfBtn').removeClass('disabled')
+                            }
+                          })
+                        $('.jrfRequired').blur(function() {
+                            if ($('#dateInput').val()=='',$('#schoolInput').val()=='',$('#jrfclassInput').val()=='',$('#genderInput').val()=='',$('#jrfscriptInput').val()=='',$('#jrfscheduleInput').val()=='',$('#surroundingInput').val()=='',$('#activityInput').val()=='',$('#partInput').val()=='',$('#s_difficultyInput').val()=='',$('#instructionInput').val()=='',$('#gainInput').val()=='') {
                               $('#jrfBtn').addClass('disabled')
                             }else{
                               $('#jrfBtn').removeClass('disabled')
