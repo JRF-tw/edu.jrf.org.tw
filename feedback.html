@@ -88,7 +88,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
                     <h1 class="text-center">問卷回饋</h1>
                     <p class="lead text-center">為了能更好的推廣法治教育，我們需要各位同學的回饋！</p>
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" id="stdform">
                         <div class="form-group">
                             <label for="dateInput" class="col-sm-2 control-label">活動日期*</label>
                             <div class="col-sm-10">
@@ -238,7 +238,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <input id="jrfBtn" type="button" class="btn btn-default" onclick="SendStudent()" value="送出" />
+                              <button id="jrfBtn" type="button" class="btn btn-default disabled" onclick="SendStudent()" >送出</button>
+                              <span style="color: red" class="error0">表單未完成</span>
                             </div>
                         </div>
                     </form>
@@ -246,18 +247,34 @@
                       $(document).ready(function() {
                         $('.jrfRequired').ready(function() {
                             if ($('#dateInput').val()=='',$('#schoolInput').val()=='',$('#jrfclassInput').val()=='',$('#genderInput').val()=='',$('#jrfscriptInput').val()=='',$('#jrfscheduleInput').val()=='',$('#surroundingInput').val()=='',$('#activityInput').val()=='',$('#partInput').val()=='',$('#s_difficultyInput').val()=='',$('#instructionInput').val()=='',$('#gainInput').val()=='') {
+                              $('#jrfBtn').attr('disabled', 'disabled');
                               $('#jrfBtn').addClass('disabled')
                             }else{
-                              $('#jrfBtn').removeClass('disabled')
+                              $('#jrfBtn').removeClass('disabled');
+                              $('#jrfBtn').removeAttr('disabled')
                             }
                           })
                         $('.jrfRequired').blur(function() {
                             if ($('#dateInput').val()=='',$('#schoolInput').val()=='',$('#jrfclassInput').val()=='',$('#genderInput').val()=='',$('#jrfscriptInput').val()=='',$('#jrfscheduleInput').val()=='',$('#surroundingInput').val()=='',$('#activityInput').val()=='',$('#partInput').val()=='',$('#s_difficultyInput').val()=='',$('#instructionInput').val()=='',$('#gainInput').val()=='') {
+                              $('#jrfBtn').attr('disabled', 'disabled');
                               $('#jrfBtn').addClass('disabled')
                             }else{
-                              $('#jrfBtn').removeClass('disabled')
+                              $('#jrfBtn').removeClass('disabled');
+                              $('#jrfBtn').removeAttr('disabled')
                             }
                           })
+                      });
+                    </script>
+                    <script>
+                      $(document).ready(function() {
+                        $('$jrfBtn').click(function() {
+                          if ($('#jrfBtn').attr('disabled')=='disabled';) {
+                            $('.error0').text('表單未完成')
+                          } else {
+                            document.stdform.submit();
+                            $('.error0').text('')
+                          }
+                        });
                       });
                     </script>
                     <script>
