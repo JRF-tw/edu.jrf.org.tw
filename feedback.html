@@ -248,7 +248,8 @@
                         $('.jrfRequired').ready(function() {
                             if ($('#dateInput').val()=='',$('#schoolInput').val()=='',$('#jrfclassInput').val()=='',$('#genderInput').val()=='',$('#jrfscriptInput').val()=='',$('#jrfscheduleInput').val()=='',$('#surroundingInput').val()=='',$('#activityInput').val()=='',$('#partInput').val()=='',$('#s_difficultyInput').val()=='',$('#instructionInput').val()=='',$('#gainInput').val()=='') {
                               $('#jrfBtn').attr('disabled', 'disabled');
-                              $('#jrfBtn').addClass('disabled')
+                              $('#jrfBtn').addClass('disabled');
+                              $('.error0').text('表單未完成')
                             }else{
                               $('#jrfBtn').removeClass('disabled');
                               $('#jrfBtn').removeAttr('disabled');
@@ -258,7 +259,8 @@
                         $('.jrfRequired').blur(function() {
                             if ($('#dateInput').val()=='',$('#schoolInput').val()=='',$('#jrfclassInput').val()=='',$('#genderInput').val()=='',$('#jrfscriptInput').val()=='',$('#jrfscheduleInput').val()=='',$('#surroundingInput').val()=='',$('#activityInput').val()=='',$('#partInput').val()=='',$('#s_difficultyInput').val()=='',$('#instructionInput').val()=='',$('#gainInput').val()=='') {
                               $('#jrfBtn').attr('disabled', 'disabled');
-                              $('#jrfBtn').addClass('disabled')
+                              $('#jrfBtn').addClass('disabled');
+                              $('.error0').text('表單未完成')
                             }else{
                               $('#jrfBtn').removeClass('disabled');
                               $('#jrfBtn').removeAttr('disabled');
