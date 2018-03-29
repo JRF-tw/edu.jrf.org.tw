@@ -251,7 +251,8 @@
                               $('#jrfBtn').addClass('disabled')
                             }else{
                               $('#jrfBtn').removeClass('disabled');
-                              $('#jrfBtn').removeAttr('disabled')
+                              $('#jrfBtn').removeAttr('disabled');
+                              $('.error0').text('')
                             }
                           })
                         $('.jrfRequired').blur(function() {
@@ -260,7 +261,8 @@
                               $('#jrfBtn').addClass('disabled')
                             }else{
                               $('#jrfBtn').removeClass('disabled');
-                              $('#jrfBtn').removeAttr('disabled')
+                              $('#jrfBtn').removeAttr('disabled');
+                              $('.error0').text('')
                             }
                           })
                       });
@@ -272,7 +274,7 @@
                             $('.error0').text('表單未完成')
                           } else {
                             document.stdform.submit();
-                            $('.error0').text('')
+                            
                           }
                         });
                       });
