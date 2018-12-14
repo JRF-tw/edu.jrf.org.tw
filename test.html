@@ -1,205 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=7">
-	<meta:renderer></meta:renderer>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta:author></meta:author>
-	<meta name="keywords" content="Keyword 1,Keyword 2">
-	<meta name="description" content="description">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link rel="apple-touch-icon" href="favicon.png">
-	<title>title</title>
-</head>
-<body>
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="dateInput" class="col-sm-2 control-label">活動日期</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="dateInput" placeholder="例如: 3/14">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="schoolInput" class="col-sm-2 control-label">學校名稱</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="schoolInput" placeholder="ＯＯ中學">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="jrfclassInput" class="col-sm-2 control-label">班級</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="jrfclassInput" placeholder="Ｏ年Ｏ班">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="genderInput" class="col-sm-2 control-label">性別</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="genderInput" placeholder="男／女／其他">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="jrfscriptInput" class="col-sm-2 control-label">使用劇本</label>
-                            <div class="col-sm-10">
-                                <select class="form-control" id="jrfscriptInput">
-                                    <option>- 請擇一 -</option>
-                                    <option value="寶石竊盜案">寶石竊盜案</option>
-                                    <option value="鬥毆案">鬥毆案</option>
-                                    <option value="KTV販毒疑雲案">KTV販毒疑雲案</option>
-                                    <option value="撿屍疑雲案">撿屍疑雲案</option>
-                                </select>
-                            </div>
-                        </div>
-                        <fieldset>
-                            <legend class="scheduler-border">活動安排</legend>
-                            <div class="form-group">
-                                <label for="jrfscheduleInput" class="col-sm-2 control-label">時間安排</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" id="jrfscheduleInput">
-                                        <option>- 請擇一 -</option>
-                                        <option value="1">1 不滿意</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3 普通</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 滿意</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="surroundingInput" class="col-sm-2 control-label">場地環境</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" id="surroundingInput">
-                                        <option>- 請擇一 -</option>
-                                        <option value="1">1 不滿意</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3 普通</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 滿意</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="activityInput" class="col-sm-2 control-label">活動內容</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" id="activityInput">
-                                        <option>- 請擇一 -</option>
-                                        <option value="1">1 無聊</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3 普通</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 有趣</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="partInput" class="col-sm-2 control-label">本次活動讓您印象最深刻的部分</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" id="partInput">
-                                        <option>- 請擇一 -</option>
-                                        <option>審判長進行審前指示</option>
-                                        <option>模擬法庭劇</option>
-                                        <option>陪審員評議過程</option>
-                                        <option>陪審團主席宣判結果與分享</option>
-                                        <option>講師解說</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="scheduler-border">
-                            <legend class="scheduler-border">劇本及審理程序</legend>
-                            <div class="form-group">
-                                <label for="s_difficultyInput" class="col-sm-2 control-label">劇本難易度</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" id="s_difficultyInput">
-                                        <option>- 請擇一 -</option>
-                                        <option>簡單</option>
-                                        <option>適中</option>
-                                        <option>困難</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="instructionInput" class="col-sm-2 control-label">審判長的審前指示是否清楚？</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" id="instructionInput">
-                                        <option>- 請擇一 -</option>
-                                        <option>清楚</option>
-                                        <option>不清楚</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="suggestionInput" class="col-sm-2 control-label">其他建議</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" rows="3" id="suggestionInput" placeholder=""></textarea>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="form-group">
-                            <label for="gainInput" class="col-sm-2 control-label">參與活動最大的收穫</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="gainInput" placeholder=""></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="experienceInput" class="col-sm-2 control-label">建議或回饋</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="experienceInput" placeholder=""></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="tojrfInput" class="col-sm-2 control-label">想對講師/司改會說的話</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="tojrfInput" placeholder=""></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <input type="button" class="btn btn-default" onclick="SendStudent()" value="送出" />
-                            </div>
-                        </div>
-                    </form>
-                    <script type="text/javascript">
-                    var date = $('#dateInput'),
-                        school = $('#schoolInput'),
-                        jrfclass = $('#jrfclassInput'),
-                        gender = $('#genderInput'),
-                        jrfscript = $('#jrfscriptInput'),
-                        jrfschedule = $('#jrfscheduleInput'),
-                        surrounding = $('#surroundingInput'),
-                        activity = $('#activityInput'),
-                        part = $('#partInput'),
-                        s_difficulty = $('#s_difficultyInput'),
-                        instruction = $('#instructionInput'),
-                        suggestion = $('#suggestionInput'),
-                        gain = $('#gainInput'),
-                        experience = $('#experienceInput'),
-                        tojrf = $('#tojrfInput');
+<!doctype html>
+<html lang="zh-tw">
 
-                    function SendStudent() {
-                        $.get("https://script.google.com/macros/s/AKfycbzablmOe-MdTkOy3adzE8IdfSYBteAtj313g1upzPnjLlScbj1T/exec", {
-                                "date": date.val(),
-                                "school": school.val(),
-                                "jrfclass": jrfclass.val(),
-                                "gender": gender.val(),
-                                "jrfscript": jrfscript.val(),
-                                "jrfschedule": jrfschedule.val(),
-                                "surrounding": surrounding.val(),
-                                "activity": activity.val(),
-                                "part": part.val(),
-                                "s_difficulty": s_difficulty.val(),
-                                "instruction": instruction.val(),
-                                "suggestion": suggestion.val(),
-                                "gain": gain.val(),
-                                "experience": experience.val(),
-                                "tojrf": tojrf.val()
-                            },
-                            function(data) {
-                                window.location = 'https://edu.jrf.org.tw/done.html';
-                            });
-                    }
-                    </script>
-                    <p></p>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>2018校園模擬陪審法庭—民間司法改革基金會</title>
+    <meta property="og:title" content="2018校園模擬陪審法庭—民間司法改革基金會" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/fb.png" />
+    <meta property="og:site_name" content="2018校園模擬陪審法庭—民間司法改革基金會" />
+    <meta property="og:url" content="https://edu.jrf.org.tw/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="img/fb.png" />
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PKP2C9R');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body style="background-color: #F2B45A;">
+    <div id="top"></div>
+    <!--選單 -->
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://www.jrf.org.tw/" target="_blank">
+              民間司改會</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://edu.jrf.org.tw">回首頁</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--選單 end-->
+    <!--主視覺 -->
+    <div class="container">
+        <div>
+            <div class="jumbotron mt-3">
+                <p><img src="img/title.png" width="100%" alt=""></p>
+                <h1 style="color: #998675" class="text-center">校園模擬陪審法庭</h1>
+                <p class="text-center" style="color: #534741">
+                    <span class="nobreak">#實境公民課</span>
+                    <span class="nobreak">#真實案件</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top:2em;">
+        <div class="row">
+            <svg class="hide"><defs> 
+  <g id="shape-codepen"> <path class="outer-ring"  d="M50,0C22.385,0,0,22.385,0,50c0,27.615,22.385,50,50,50c27.614,0,50-22.385,50-50C100,22.385,77.615,0,50,0z M50,91.789
+        C26.958,91.789,8.212,73.042,8.212,50C8.212,26.958,26.958,8.212,50,8.212c23.042,0,41.788,18.747,41.788,41.789
+        C91.788,73.042,73.042,91.789,50,91.789z"></path> <path class="inner-logo"  d="M80.893,40.234c-0.006-0.039-0.016-0.076-0.022-0.115c-0.013-0.075-0.027-0.15-0.046-0.223
+        c-0.012-0.044-0.028-0.086-0.042-0.128c-0.021-0.065-0.042-0.13-0.068-0.193c-0.018-0.044-0.039-0.088-0.059-0.13
+        c-0.028-0.06-0.057-0.119-0.09-0.175c-0.024-0.042-0.051-0.083-0.076-0.124c-0.036-0.055-0.073-0.109-0.112-0.161
+        c-0.029-0.039-0.06-0.078-0.091-0.115c-0.042-0.049-0.086-0.098-0.132-0.143c-0.035-0.036-0.069-0.072-0.106-0.104
+        c-0.049-0.044-0.099-0.086-0.15-0.127c-0.04-0.031-0.079-0.062-0.12-0.091c-0.016-0.01-0.029-0.023-0.044-0.033L51.474,19.531
+        c-0.893-0.595-2.055-0.595-2.947,0L20.267,38.371c-0.015,0.01-0.028,0.023-0.044,0.033c-0.042,0.029-0.081,0.06-0.12,0.091
+        c-0.052,0.041-0.102,0.083-0.15,0.127c-0.037,0.032-0.071,0.068-0.106,0.104c-0.046,0.045-0.09,0.094-0.132,0.143
+        c-0.031,0.038-0.062,0.077-0.092,0.115c-0.039,0.052-0.076,0.106-0.111,0.161c-0.027,0.041-0.052,0.082-0.076,0.124
+        c-0.033,0.057-0.062,0.115-0.09,0.175c-0.021,0.042-0.042,0.086-0.06,0.13c-0.026,0.063-0.047,0.128-0.068,0.193
+        c-0.014,0.042-0.029,0.084-0.042,0.128c-0.02,0.073-0.032,0.148-0.046,0.223c-0.006,0.039-0.016,0.076-0.021,0.115
+        c-0.016,0.114-0.024,0.229-0.024,0.346V59.42c0,0.117,0.009,0.233,0.024,0.348c0.005,0.038,0.015,0.077,0.021,0.114
+        c0.014,0.075,0.027,0.149,0.046,0.223c0.012,0.043,0.028,0.086,0.042,0.128c0.021,0.065,0.042,0.13,0.068,0.195
+        c0.018,0.044,0.039,0.086,0.06,0.129c0.028,0.06,0.058,0.118,0.09,0.177c0.024,0.041,0.049,0.082,0.076,0.122
+        c0.035,0.056,0.072,0.109,0.111,0.161c0.029,0.041,0.061,0.078,0.092,0.115c0.042,0.049,0.086,0.098,0.132,0.144
+        c0.035,0.036,0.069,0.071,0.106,0.104c0.048,0.044,0.099,0.086,0.15,0.127c0.039,0.031,0.078,0.062,0.12,0.091
+        c0.016,0.01,0.029,0.023,0.044,0.032l28.259,18.84c0.446,0.297,0.96,0.447,1.474,0.447c0.513,0,1.027-0.149,1.473-0.447
+        l28.259-18.84c0.015-0.009,0.028-0.022,0.044-0.032c0.042-0.029,0.081-0.06,0.12-0.091c0.051-0.041,0.102-0.083,0.15-0.127
+        c0.037-0.033,0.071-0.068,0.106-0.104c0.046-0.046,0.09-0.095,0.132-0.144c0.031-0.037,0.062-0.075,0.091-0.115
+        c0.04-0.052,0.076-0.105,0.112-0.161c0.025-0.041,0.051-0.081,0.076-0.122c0.033-0.059,0.062-0.117,0.09-0.177
+        c0.02-0.042,0.041-0.085,0.059-0.129c0.026-0.065,0.047-0.13,0.068-0.195c0.014-0.042,0.03-0.085,0.042-0.128
+        c0.02-0.074,0.033-0.148,0.046-0.223c0.006-0.037,0.016-0.076,0.022-0.114c0.014-0.115,0.023-0.231,0.023-0.348V40.581
+        C80.916,40.464,80.907,40.348,80.893,40.234z M52.657,26.707l20.817,13.877l-9.298,6.221l-11.519-7.706V26.707z M47.343,26.707
+        v12.393l-11.518,7.706l-9.299-6.221L47.343,26.707z M24.398,45.554L31.046,50l-6.648,4.446V45.554z M47.343,73.294L26.525,59.417
+        l9.299-6.219l11.518,7.704V73.294z M50,56.286L40.603,50L50,43.715L59.397,50L50,56.286z M52.657,73.294V60.902l11.519-7.704
+        l9.298,6.219L52.657,73.294z M75.602,54.447L68.955,50l6.647-4.446V54.447z"></path> </g>
+   <path id="shape-twitter" d="M100.001,17.942c-3.681,1.688-7.633,2.826-11.783,3.339
+    c4.236-2.624,7.49-6.779,9.021-11.73c-3.965,2.432-8.354,4.193-13.026,5.146C80.47,10.575,75.138,8,69.234,8
+    c-11.33,0-20.518,9.494-20.518,21.205c0,1.662,0.183,3.281,0.533,4.833c-17.052-0.884-32.168-9.326-42.288-22.155
+    c-1.767,3.133-2.778,6.773-2.778,10.659c0,7.357,3.622,13.849,9.127,17.65c-3.363-0.109-6.525-1.064-9.293-2.651
+    c-0.002,0.089-0.002,0.178-0.002,0.268c0,10.272,7.072,18.845,16.458,20.793c-1.721,0.484-3.534,0.744-5.405,0.744
+    c-1.322,0-2.606-0.134-3.859-0.379c2.609,8.424,10.187,14.555,19.166,14.726c-7.021,5.688-15.867,9.077-25.48,9.077
+    c-1.656,0-3.289-0.102-4.895-0.297C9.08,88.491,19.865,92,31.449,92c37.737,0,58.374-32.312,58.374-60.336
+    c0-0.92-0.02-1.834-0.059-2.743C93.771,25.929,97.251,22.195,100.001,17.942L100.001,17.942z"></path>  <g id="shape-youtube"> <path class="youtube"  d="M98.77,27.492c-1.225-5.064-5.576-8.799-10.811-9.354C75.561,16.818,63.01,15.993,50.514,16
+        c-12.495-0.007-25.045,0.816-37.446,2.139c-5.235,0.557-9.583,4.289-10.806,9.354C0.522,34.704,0.5,42.574,0.5,50.001
+        c0,7.426,0,15.296,1.741,22.509c1.224,5.061,5.572,8.799,10.807,9.352c12.399,1.32,24.949,2.145,37.446,2.14
+        c12.494,0.005,25.047-0.817,37.443-2.14c5.234-0.555,9.586-4.291,10.81-9.352c1.741-7.213,1.753-15.083,1.753-22.509
+        S100.51,34.704,98.77,27.492 M67.549,52.203L43.977,64.391c-2.344,1.213-4.262,0.119-4.262-2.428V38.036
+        c0-2.548,1.917-3.644,4.262-2.429l23.572,12.188C69.896,49.008,69.896,50.992,67.549,52.203"></path> </g> 
+  
+  </defs></svg>
+
+<svg viewBox="0 0 100 100" class="icon shape-codepen col-md-2">
+  <use xlink:href="#shape-codepen"></use>
+</svg>
+
+<svg viewBox="0 0 100 100" class="icon shape-codepen col-md-2">
+  <use xlink:href="#shape-codepen"></use>
+</svg>
+
+<svg viewBox="0 0 100 100" class="icon shape-youtube col-md-2">
+  <linearGradient id="gradient"  gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop stop-color="#FF0000" offset="0"/><stop stop-color="#571C1C" offset="1"/>
+</linearGradient>
+  <use xlink:href="#shape-youtube"></use>
+</svg>
+
+<svg viewBox="0 0 100 100" class="icon shape-twitter col-md-2">
+  <use xlink:href="#shape-twitter"></use>
+</svg>
+
+<svg viewBox="0 0 100 100" class="icon shape-twitter-2 col-md-2">
+  <use xlink:href="#shape-twitter"></use>
+</svg>
+
+<svg viewBox="0 0 100 100" class="icon shape-twitter-3 col-md-2">
+  <use xlink:href="#shape-twitter"></use>
+</svg>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row col-xs-12">
+                <div class="col-md-6">
+                    <p><img src="img/logo-b.png" alt="" width="200px"></p>
+                    <p>民間司法改革基金會成立於1995年11月。主要工作為法案推動、監督評鑑、個案追蹤與教育推廣。改革的力量必須由下而上，只有經由民間的推力，才能讓改革的夢想成為真實，最終建立人民信賴的司法。</p>
+                    <p>網站內容由民間司法改革基金會製作，以創用CC 姓名標示-相同方式分享 4.0 國際 授權條款釋出。</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>台北辦公室</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone"></i> <a href="tel:0225231178">02-2523-1178</a></li>
+                        <li><i class="fa fa-fax"></i> <a href="fax:0225319373">02-2531-9373</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@jrf.org.tw">contact@jrf.org.tw</a></li>
+                        <li><i class="fa fa-map-marker"></i> <a target="_blank" href="https://goo.gl/maps/EiTjRjG1mDo">台北市中山區松江路90巷3號7樓</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>台中辦公室</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone"></i> <a href="tel:0423292372">04-2329-2372</a></li>
+                        <li><i class="fa fa-fax"></i> <a href="fax:0423292370">04-2329-2370</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@jrf.org.tw">taichung@jrf.org.tw</a></li>
+                        <li><i class="fa fa-map-marker"></i> <a target="_blank" href="https://goo.gl/maps/EiTjRjG1mDo">台中市西屯區臺灣大道2段845號</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--回上-->
+    <a href="#top">
+        <div class="scrollToTop" style="display: block;"><i class="fas fa-chevron-up"></i></div>
+    </a>
+    <!-- Optional JavaScript -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12&appId=544122699121846&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKP2C9R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
+
 </html>
