@@ -96,7 +96,7 @@ legend{
 /* SVG */
 .st0{
     fill:none;
-    stroke:#FFFFFF;
+    stroke:rgba(255,255,255,1);
     stroke-width:5;
     fill: transparent;
     transition: 0.4s;
