@@ -93,3 +93,20 @@ legend{
 .error0.error1,.error2,.error3,.error4,.error5,.error6,.error7,.error8,.error9,.error10,.error11,.error12{
     color: red;
 }
+/* SVG */
+.st0{
+    fill:none;
+    stroke:#FFFFFF;
+    stroke-width:5;
+    fill: transparent;
+    transition: 0.4s;
+    cursor: pointer
+}
+.st0:hover{
+    fill: #fff;
+    transform:translate(-2px,-2px)
+}
+.countyData {
+    padding: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
