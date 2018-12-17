@@ -110,3 +110,11 @@ legend{
     padding: 20px;
     border-radius: 5px 5px 5px 5px;
 }
+.NumRed{
+    color: #D54850;
+    font-weight: bolder;
+    font-size: 42px
+}
+.hrY{
+    border-bottom: 1px solid #F2B45A;
+}
