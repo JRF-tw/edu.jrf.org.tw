@@ -81,20 +81,20 @@
     </div>
     <div class="container" style="padding-top:2em">
         <div class="row col-lg-10 col-lg-offset-1">
-            <h1 style="padding-bottom: 0.5em" class="text-center">2018 成果報報</h1>
+            <h1 style="padding-bottom: 0.5em" class="text-center"><small style="color: #000">2018</small><br>成果報報</h1>
             <blockquote style="font-size:10pt;font-weight: bold;"><p>違法取證但能證明真實，在法庭上能否作為證據？<br>
 容許司法犯錯和縱放之間，你的選擇是什麼<br>
 我們能在法庭上找到真相嗎？</p></blockquote>
             <p><strong></strong>教育是社會進步的基石。民間司改會將模擬陪審法庭帶入校園、機構，讓參與者透過活動進行法庭制度、案件事實、法律層面的思考，由同學們親身體驗互動式學習，讓想像不局限於書本，貼近實務開闊多元視角。</p>
-            <p>我們從2015年開始常態性進入校園，因受限於人力2015年只走了9個縣市，接觸3,700位同學。在2017年底，我們投入更多資源，2018年正式在台中成立了「法治教育中心」，並安排專職的校園企劃專員，以中南部地區為主，擴大推動校園模擬法庭活動。除了離島的馬祖、澎湖，全台各縣市都有我們的足跡，共辦理161場次，進入98所校園，觸及7,344位同學。</p>
+            <p>2017年因受限於人力只走了9個縣市，接觸1,770位同學。在2017年底，我們投入更多資源，2018年正式在台中成立了「法治教育中心」，並安排專職的校園企劃專員，以中南部地區為主，擴大推動校園模擬法庭活動。除了離島的馬祖、澎湖，全台各縣市都有我們的足跡，共辦理161場次，進入98所校園，觸及7,344位同學。</p>
         </div>
     </div>
     <!--制縣等級-->
     <div class="container" style="padding-top:2em;">
-        <div class="row col-lg-10 col-lg-offset-1">
+        <div class="row col-lg-10 col-lg-offset-1"><h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 制縣等級</h2>
             <div class="col-sm-6">
                 <!--各地統計 -->
-                    <h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 制縣等級</h2>
+                    
                     <!-- Tab panes -->
                     <p class="small">（點選地圖切換）</p>
                     <div class="tab-content">
@@ -155,13 +155,13 @@
                         <div role="tabpanel" class="tab-pane bg-warning countyData" id="Taipei_D">
                             <div class="row hrY">
                                 <div class="col-xs-3">
-                                    <p class="text-center"><span class="NumRed">21</span> 場</p>
+                                    <p class="text-center"><span class="NumRed">21</span><br class="hidden-md">場</p>
                                 </div>
                                 <div class="col-xs-3">
                                     <p class="text-center"><span class="NumRed">16</span><br class="hidden-md">所</p>
                                 </div>
                                 <div class="col-xs-6">
-                                    <p class="text-center"><span class="NumRed">792</span> 人</p>
+                                    <p class="text-center"><span class="NumRed">792</span><br class="hidden-md">人</p>
                                 </div>
                             </div>
                             <h3>台北市</h3>
@@ -748,12 +748,13 @@
 <div class="container">
 <div class="row col-lg-10 col-lg-offset-1">
     <h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 分區統計</h2>
-    <p>檢視我們2018年在各地區的辦理情況，</p>
+    <p>檢視2017年與2018年我們在各地區的辦理分布，2018年在各地區的學生人數、場次數及合作校所數量均有明顯的成長，特別是在南部地區，從186人成長為2,138人，合作校所從4間成長至28間。</p>
+    <p>雖然各地區均有成長，但仍集中在直轄市，在北、中、南部，觸及的學生數量直轄市是非直轄市的2倍，顯示資源仍較集中於都會地區。</p>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6" style="margin-bottom: 1em;">
             <div class="col-xs-12 wellY">
                 <p><canvas id="myChart"></canvas></p>
-            <p class="small text-center">圖 各區人數統計</p>
+            <p class="small text-center">圖 各區學生人數統計</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script><script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
@@ -761,58 +762,109 @@ var myChart = new Chart(ctx, {
   data:  {
     labels: ['北部','中部', '南部', '東部', '離島'],
     datasets: [{
-      label: '人數',
+      label: '2017人數',
       fill: false,
       lineTension: 0.1,
-      data: [3389,1375,2138,412,30],
+      data: [1304,200,186,80,0],
       borderColor: "rgba(213,72,80,1)",
       backgroundColor: "rgba(213,72,80,0.6)"
     },
+    {
+      label: '2018人數',
+      fill: false,
+      lineTension: 0.1,
+      data: [3389,1375,2138,412,30],
+      borderColor: "rgba(7,104,159,1)",
+      backgroundColor: "rgba(7,104,159,0.7)"
+    }
      ]
   }
 });
 </script>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6" style="margin-bottom: 1em;">
             <div class="col-xs-12 wellY">
                 <p><canvas id="myChart3"></canvas></p>
-            <p class="small text-center">圖 各區場次統計</p><script>
+            <p class="small text-center">圖 各區辦理場次統計</p><script>
 var ctx = document.getElementById('myChart3').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'bar',
   data:  {
     labels: ['北部','中部', '南部', '東部', '離島'],
     datasets: [{
-      label: '場次數',
+      label: '2017場次數',
+      fill: false,
+      lineTension: 0.1,
+      data: [28,5,4,1,0],
+      borderColor: "rgba(213,72,80,1)",
+      backgroundColor: "rgba(213,72,80,0.6)"
+    },{
+      label: '2018場次數',
       fill: false,
       lineTension: 0.1,
       data: [78,29,45,9,1],
       borderColor: "rgba(7,104,159,1)",
-      backgroundColor: "rgba(7,104,159,0.6)"
+      backgroundColor: "rgba(7,104,159,0.7)"
     }, ]
   }
 });
 </script>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6" style="margin-bottom: 1em;">
             <div class="col-xs-12 wellY">
                 <p><canvas id="myChart2"></canvas></p>
-            <p class="small text-center">圖 各區合作校所</p><script>
+            <p class="small text-center">圖 各區合作校所數量</p><script>
 var ctx = document.getElementById('myChart2').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'bar',
   data:  {
     labels: ['北部','中部', '南部', '東部', '離島'],
     datasets: [{
-      label: '合作校所數量',
+      label: '2017合作校所',
+      fill: false,
+      lineTension: 0.1,
+      data: [10,4,4,1,0],
+      borderColor: "rgba(213,72,80,1)",
+      backgroundColor: "rgba(213,72,80,0.6)"
+    },{
+      label: '2018合作校所',
       fill: false,
       lineTension: 0.1,
       data: [44,20,28,5,1],
-      borderColor: "rgba(242,180,90,1)",
-      backgroundColor: "rgba(242,180,90,0.8)"
+      borderColor: "rgba(7,104,159,1)",
+      backgroundColor: "rgba(7,104,159,0.7)"
     }, ]
+  }
+});
+</script>
+            </div>
+        </div>
+        <div class="col-sm-6" style="margin-bottom: 1em;">
+            <div class="col-xs-12 wellY">
+                <p><canvas id="myChart4"></canvas></p>
+            <p class="small text-center">圖 2018年直轄市 vs 非直轄市人數比較</p><script>
+var ctx = document.getElementById('myChart4').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data:  {
+    labels: ['北部','中部', '南部', '東部', '離島'],
+    datasets: [{
+      label: '直轄市',
+      fill: false,
+      lineTension: 0.1,
+      data: [2100,913,1485,0,0],
+      borderColor: "rgba(213,72,80,1)",
+      backgroundColor: "rgba(213,72,80,0.6)"
+    },{
+      label: '非直轄市',
+      fill: false,
+      lineTension: 0.1,
+      data: [1289,462,653,412,30],
+      borderColor: "rgba(7,104,159,1)",
+      backgroundColor: "rgba(7,104,159,0.7)"
+    } ]
   }
 });
 </script>
@@ -823,6 +875,13 @@ var myChart = new Chart(ctx, {
     
 </div>
 </div>
+<!--制縣等級-->
+    <div class="container" style="padding-top:2em;">
+        <div class="row col-lg-10 col-lg-offset-1">
+            <h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 滿意度回饋</h2>
+        </div>
+    </div>
+    <!--滿意度end-->
     <footer class="footer">
         <div class="container">
             <div class="row col-xs-12">
@@ -851,6 +910,7 @@ var myChart = new Chart(ctx, {
             </div>
         </div>
     </div>
+
     </footer>
     <!--回上-->
     <a href="#top">
