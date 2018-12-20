@@ -749,10 +749,10 @@
 <div class="row col-lg-10 col-lg-offset-1">
     <h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 分區統計</h2>
     <p>檢視2017年與2018年我們在各地區的辦理分布，2018年在各地區的學生人數、場次數及合作校所數量均有明顯的成長，特別是在南部地區，從186人成長為2,138人，合作校所從4間成長至28間。</p>
-    <p>雖然各地區均有成長，但仍集中在直轄市，在北、中、南部，觸及的學生數量直轄市是非直轄市的2倍，顯示資源仍較集中於都會地區。</p>
+    <p>雖然各地區均有成長，但仍集中在直轄市，在北、中、南部觸及的學生數量，<strong>直轄市是非直轄市的2倍</strong>，顯示資源仍較集中於都會地區。2019年我們希望能加強與非都會地區、離島的學校合作。</p>
     <div class="row">
-        <div class="col-sm-6" style="margin-bottom: 1em;">
-            <div class="col-xs-12 wellY">
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
                 <p><canvas id="myChart"></canvas></p>
             <p class="small text-center">圖 各區學生人數統計</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script><script>
@@ -783,8 +783,8 @@ var myChart = new Chart(ctx, {
 </script>
             </div>
         </div>
-        <div class="col-sm-6" style="margin-bottom: 1em;">
-            <div class="col-xs-12 wellY">
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
                 <p><canvas id="myChart3"></canvas></p>
             <p class="small text-center">圖 各區辦理場次統計</p><script>
 var ctx = document.getElementById('myChart3').getContext('2d');
@@ -812,8 +812,8 @@ var myChart = new Chart(ctx, {
 </script>
             </div>
         </div>
-        <div class="col-sm-6" style="margin-bottom: 1em;">
-            <div class="col-xs-12 wellY">
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
                 <p><canvas id="myChart2"></canvas></p>
             <p class="small text-center">圖 各區合作校所數量</p><script>
 var ctx = document.getElementById('myChart2').getContext('2d');
@@ -841,8 +841,8 @@ var myChart = new Chart(ctx, {
 </script>
             </div>
         </div>
-        <div class="col-sm-6" style="margin-bottom: 1em;">
-            <div class="col-xs-12 wellY">
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
                 <p><canvas id="myChart4"></canvas></p>
             <p class="small text-center">圖 2018年直轄市 vs 非直轄市人數比較</p><script>
 var ctx = document.getElementById('myChart4').getContext('2d');
@@ -879,6 +879,7 @@ var myChart = new Chart(ctx, {
     <div class="container" style="padding-top:2em;">
         <div class="row col-lg-10 col-lg-offset-1">
             <h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 滿意度回饋</h2>
+            
         </div>
     </div>
     <!--滿意度end-->
