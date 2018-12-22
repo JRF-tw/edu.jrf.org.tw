@@ -1000,16 +1000,7 @@ var myChart = new Chart(ctx, {
         <div class="row col-lg-10 col-lg-offset-1">
             <h2><img style="padding-bottom:7px" src="img/logo-.png" alt="" width="24px"> 活動回饋</h2>
             <p>在活動結束後，我們請任課教師協助將線上回饋問卷提供給參與的學生，讓有意願提供回饋意見的學生匿名填寫，共收回386筆資料。</p>
-            <p>模擬陪審法庭活動過程分為五部分：</p>
-            <ol style="font-size: 1.2em">
-                <li>審判長進行審前指示</li>
-                <li>模擬法庭劇</li>
-                <li>陪審員評議過程</li>
-                <li>陪審團主席宣判結果與分享</li>
-                <li>講師解說</li>
-            </ol>
-            <p>其中讓同學們印象最深刻的是「模擬法庭劇」和「陪審員評議」，這兩部分也正是本活動的核心，「模擬法庭劇」讓同學認識並理解
-            </p>
+            
             <div class="row">
                 
         <div class="col-sm-6">
@@ -1026,11 +1017,62 @@ var myChart = new Chart(ctx, {
         </div></div>
         <div class="col-sm-6">
             <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
+                <p><canvas id="myChart12"></canvas></p>
+            <p class="small text-center">圖 劇本難易度</p><script>
+var ctx = document.getElementById('myChart12').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data:  {
+    labels: ["竊盜案","鬥毆案","販毒案","性侵案"],
+    datasets: [{
+      label: '簡單',
+      fill: false,
+      lineTension: 0.1,
+      data: [1,31,,27,17],
+      borderColor: "rgb(255, 99, 132)",
+      backgroundColor:"rgb(255, 99, 132)"
+    },{
+      label: '適中',
+      fill: false,
+      lineTension: 0.1,
+      data: [0,108,32,153],
+      borderColor: "rgb(54, 162, 235)",
+      backgroundColor: "rgb(54, 162, 235)"
+    },{
+      label: '困難',
+      fill: false,
+      lineTension: 0.1,
+      data: [0,4,0,6],
+      borderColor: "rgb(255, 205, 86)",
+      backgroundColor: "rgb(255, 205, 86)"
+    } ]
+  }
+});
+</script>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
             <p><canvas id="myChart13"></canvas></p>
             <p class="small text-center">圖 審前指示是否清楚（人數）</p>
             <script>new Chart(document.getElementById("myChart13"),{"type":"horizontalBar","data":{"labels":["清楚","不清楚"],"datasets":[{"label":"審前指示是否清楚","data":[366,17],"backgroundColor":["rgb(255, 99, 132)","rgb(255, 99, 132)"]}]}});</script>
         </div></div>
-        <div class="col-sm-5">
+        
+        
+        
+            </div>
+            <p>模擬陪審法庭活動過程分為五部分：</p>
+            <ol style="font-size: 1.2em">
+                <li>審判長進行審前指示</li>
+                <li>模擬法庭劇</li>
+                <li>陪審員評議過程</li>
+                <li>陪審團主席宣判結果與分享</li>
+                <li>講師解說</li>
+            </ol>
+            <p>其中讓同學們印象最深刻的是「模擬法庭劇」和「陪審員評議」，這兩部分也正是本活動的核心，「模擬法庭劇」讓同學認識並理解法庭上的各個角色，「陪審員評議」讓同學彼此討論、形成對案件的共識。
+            </p>
+            <div class="row">
+                <div class="col-sm-5">
             <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
                 <p><canvas id="myChart9"></canvas></p>
             <p class="small text-center">圖 對活動印象最深刻的部分</p>
@@ -1044,50 +1086,6 @@ var myChart = new Chart(ctx, {
             </script>
             </div>
         </div>
-        <div class="col-sm-7">
-            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
-                <p><canvas id="myChart12"></canvas></p>
-            <p class="small text-center">圖 劇本難易度</p><script>
-var ctx = document.getElementById('myChart12').getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data:  {
-    labels: ["國中","高中職","大專院校"],
-    datasets: [{
-      label: '竊盜案',
-      fill: false,
-      lineTension: 0.1,
-      data: [11,3,1],
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor:"rgb(255, 99, 132)"
-    },{
-      label: '鬥毆案',
-      fill: false,
-      lineTension: 0.1,
-      data: [34,21,1],
-      borderColor: "rgb(54, 162, 235)",
-      backgroundColor: "rgb(54, 162, 235)"
-    },{
-      label: '販毒案',
-      fill: false,
-      lineTension: 0.1,
-      data: [2,17,4],
-      borderColor: "rgb(255, 205, 86)",
-      backgroundColor: "rgb(255, 205, 86)"
-    },{
-      label: '性侵案',
-      fill: false,
-      lineTension: 0.1,
-      data: [5,61,2],
-      borderColor: "#99D8BB",
-      backgroundColor: "#99D8BB"
-    } ]
-  }
-});
-</script>
-            </div>
-        </div>
-        
             </div>
         </div>
     </div>
