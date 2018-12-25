@@ -122,3 +122,23 @@ legend{
     background: #fcf8e3;
     border-radius: 5px 5px 5px 5px;
 }
+.student{
+    background-color:#998675;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    font-size: 2.2em;
+    line-height: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 8px; 
+}
+.carousel .carousel-item {
+  height: 200px;
+}
+
+.carousel .carousel-item p {
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
