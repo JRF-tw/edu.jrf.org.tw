@@ -144,3 +144,7 @@ legend{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.modal-header{
+    background-color:rgb(242, 180, 90);
+    border-radius: 5px 5px 0px 0px
+}
