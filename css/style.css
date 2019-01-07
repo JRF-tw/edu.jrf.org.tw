@@ -43,6 +43,10 @@ footer a{
 	padding: 20px;
 	border-radius: 0px 0px 5px 5px;
 }
+.nav>li>a {
+    padding: 10px 10px;
+    font-weight: bold;
+}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #555;
     background-color: #fcf8e3;
