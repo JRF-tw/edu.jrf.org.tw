@@ -166,3 +166,13 @@ legend{
     font-weight: bold;
     margin-right: 8px; 
 }
+.popover{
+    font-family:"微軟正黑體";
+    background-color: #fcf8e3;
+    border-radius:30px;
+}
+.popover.top>.arrow:after {
+    bottom:1px;margin-left:-10px;
+    content:" ";border-top-color:#fcf8e3;
+    border-bottom-width:0
+}
