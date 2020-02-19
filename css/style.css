@@ -176,3 +176,54 @@ legend{
     content:" ";border-top-color:#fcf8e3;
     border-bottom-width:0
 }
+blockquote{
+    font-size: 1em;
+}
+.project{
+    fill:#fcf8e3;
+    font-family:'微軟正黑體';
+    font-size:26.2833px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.project:hover .project-hidden{
+    display:block;
+}
+.project-hidden{
+    display:none;
+    border-top: #fcf8e3 3px solid;
+    font-weight: 400;
+    font-size: 0.5em;
+    background-color: rgba(252,248,227,1.0);
+    padding: 10px;
+    border-radius:0 0 5px 5px;
+}
+.project-line{
+    fill:none;
+    stroke:#fcf8e3;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+.jumbotron {
+    background-color: #fcf8e3;
+}
+.navbar-default {
+    background-image: -webkit-linear-gradient(top,#fcf8e3 50%,#f8f8f8 100%);
+    background-image: -o-linear-gradient(top,#fcf8e3 50%,#f8f8f8 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fcf8e3),to(#f8f8f8));
+    background-image: linear-gradient(to bottom,#fcf8e3 50%,#fcf8e3 100%);
+    }
+.well{
+    background-image: linear-gradient(to bottom,#fcf8e3 50%,#f8f8f8 100%);
+}
+.lead{
+    font-weight: 600;
+}
+blockquote {
+    border-left: 5px solid #fcf8e3;
+}
+hr{
+    border-color:#F2B45A;
+}
