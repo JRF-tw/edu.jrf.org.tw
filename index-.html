@@ -21,6 +21,7 @@
     <meta property="og:url" content="https://edu.jrf.org.tw/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="img/fb.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -1301,11 +1302,125 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
 </div>
 </div>
-<!--制縣-->
+<!--制縣end-->
+<div class="container" style="padding-top:1em;margin-bottom: 2em">
+        <div class="row col-lg-10 col-lg-offset-1">
+            <h1 style="line-height: 0.5em" class="text-center"><img style="padding-bottom:10px" src="img/logo-.png" alt="" width="24px"> 回饋統計</h1>
+            <p>在活動結束後，我們請任課教師協助將線上回饋問卷提供給參與的學生，讓有意願提供回饋意見的學生匿名填寫，共收回827筆資料（統計至2020.6.18）。大部分的回饋意見都相當正面，對<strong>時間安排、內容都有很高的滿意度</strong>。其中，文字較為艱澀的「審前指示」多數學生也認為相當清楚。</p>
+            <div class="row">
+                
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
+            <p><canvas id="myChart10"></canvas></p>
+            <p class="small text-center">圖 時間安排滿意度（人數）</p>
+            <script>new Chart(document.getElementById("myChart10"),{"type":"horizontalBar","data":{"labels":["滿意","還算滿意","普通","有點不滿意","不滿意"],"datasets":[{"label":"時間安排滿意度","data":[487,159,151,6,9],"backgroundColor":["rgb(54, 162, 235)","rgb(54, 162, 235)","rgb(54, 162, 235)","rgb(54, 162, 235)","rgb(54, 162, 235)"]}]}});</script>
+        </div></div>
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
+            <p><canvas id="myChart11"></canvas></p>
+            <p class="small text-center">圖 活動內容滿意度（人數）</p>
+            <script>new Chart(document.getElementById("myChart11"),{"type":"horizontalBar","data":{"labels":["有趣","有點有趣","普通","有點無聊","無聊"],"datasets":[{"label":"內容滿意度","data":[490,188,123,10,4],"backgroundColor":["rgb(255, 205, 86)","rgb(255, 205, 86)","rgb(255, 205, 86)","rgb(255, 205, 86)","rgb(255, 205, 86)"]}]}});</script>
+        </div></div>
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
+                <p><canvas id="myChart12"></canvas></p>
+            <p class="small text-center">圖 劇本難易度（人數）</p><script>
+var ctx = document.getElementById('myChart12').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data:  {
+    labels: ["竊盜案","鬥毆案","販毒案","性侵案"],
+    datasets: [{
+      label: '簡單',
+      fill: false,
+      lineTension: 0.1,
+      data: [10,51,45,66],
+      borderColor: "rgb(255, 99, 132)",
+      backgroundColor:"rgb(255, 99, 132)"
+    },{
+      label: '適中',
+      fill: false,
+      lineTension: 0.1,
+      data: [37,158,115,305 ],
+      borderColor: "rgb(54, 162, 235)",
+      backgroundColor: "rgb(54, 162, 235)"
+    },{
+      label: '困難',
+      fill: false,
+      lineTension: 0.1,
+      data: [1,4,0,19],
+      borderColor: "rgb(255, 205, 86)",
+      backgroundColor: "rgb(255, 205, 86)"
+    } ]
+  }
+});
+</script>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
+            <p><canvas id="myChart13"></canvas></p>
+            <p class="small text-center">圖 審前指示是否清楚（人數）</p>
+            <script>new Chart(document.getElementById("myChart13"),{"type":"horizontalBar","data":{"labels":["清楚","不清楚"],"datasets":[{"label":"審前指示是否清楚","data":[786,38],"backgroundColor":["rgb(255, 99, 132)","rgb(255, 99, 132)"]}]}});</script>
+        </div></div>
+            </div>
+
+            <p>模擬法庭活動過程分為五部分：</p>
+            <ol style="font-size: 1.2em">
+                <li>審判長進行審前指示</li>
+                <li>模擬法庭劇</li>
+                <li>評議過程</li>
+                <li>各組主席宣判結果與分享</li>
+                <li>講師解說</li>
+            </ol>
+            <p>其中讓同學們<strong>印象最深刻的是「模擬法庭劇」和「評議」</strong>，這兩部分也正是本活動的核心，「模擬法庭劇」讓同學認識並理解法庭上的各個角色，「評議」讓同學彼此討論、形成對案件的共識。
+            </p>
+            <div class="row">
+                <div class="col-sm-5">
+            <div class="col-xs-12 wellY" style="margin-bottom: 1em;">
+                <p><canvas id="myChart9"></canvas></p>
+            <p class="small text-center">圖 對活動印象最深刻的部分（人數）</p>
+            <script>new Chart(document.getElementById("myChart9"),{"type":"doughnut","data":{
+                "labels":["審前指示","模擬法庭劇","評議","宣判結果與分享","講師解說"],
+                "datasets":[
+                    {
+                    "label":"活動印象最深刻的部分",
+                    "data":[16,418,202,72,117],
+                    "backgroundColor":["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)","#99D8BB","#C77FFF"]}]}});
+            </script>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="col-xs-12 wellY small">
+                <table style="margin-bottom: 1em;">
+                    <tr class="hrY">
+                        <td style="padding: 10px 5px 10px 5px"><div class="student text-center">生</div></td>
+                        <td style="padding: 10px 5px 10px 5px">一開始以為有罪無罪是很容易判定的，但後來發現要討論的真的很多且要經過審慎的整理才可以得出一個結論。</td>
+                    </tr>
+                    <tr class="hrY">
+                        <td style="padding: 10px 5px 10px 5px"><div class="student text-center">生</div></td>
+                        <td style="padding: 10px 5px 10px 5px">在討論的時候聽到大家不同的觀點，有時候會被說服，從其中的證據抽絲剝繭後雖然還是無法知道真相，心中也有了大概的想法，過程當中真的很有趣。</td>
+                    </tr>
+                    <tr class="hrY">
+                        <td style="padding: 10px 5px 10px 5px"><div class="student text-center">生</div></td>
+                        <td style="padding: 10px 5px 10px 5px">擔任陪審員時，在和同組同樣是陪審員的人互相討論，說出彼此的想法，最終討論出無罪或有罪的結論，過程中可以聽見他人與自己不同的想法或自己沒思考到的另一個觀點，藉由這樣的討論可以更了解這個案件另個一位子的思考。且在決定無罪或有罪的投票裡的多數決或全數決中，要說服並改變少數人的想法，或自己就是那少數人時，如何思考且聽多數人說服自己的論點。在這討論的過程中，我認為收穫最多！</td>
+                    </tr>
+                    <tr class="hrY">
+                        <td style="padding: 10px 5px 10px 5px"><div class="student text-center">生</div></td>
+                        <td style="padding: 10px 5px 10px 5px">知道其實審判不是一件簡單的事。</td>
+                    </tr>
+                </table>
+                <p class="small text-center">表 參與學生回覆「收獲」內容隨選</p>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <!--滿意度end-->
     <!--線上試玩-->
     <div id="play" class="container" style="padding-top:2em;padding-bottom: 2em">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
                 <h1 class="text-center"><img style="padding-bottom:10px" src="img/logo-.png" alt="" width="24px"> 線上試玩</h1>
                 <h3>《KTV販毒疑雲》</h3>
                 <p>被告陳介德與林遠平、岳心瑩、吳文真均為大學三年級學生。2015年7月8日，四人相約在KTV唱歌，替岳心瑩慶生。席間，吳文真因故先行離開，留下陳介德、林遠平與岳心瑩三人。當警方進入KTV包廂臨檢盤查時，三人正在吸食K他命。警方除了在現場查獲裝有15克K他命的夾鏈袋一枚與K盤一個，還在陳介德身上搜出八萬元現金...</p>
